@@ -1,0 +1,67 @@
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    </head>
+
+    
+    <body>
+           <table>
+            
+                <tr>
+                    <td>firstNumber</td>
+                    <td>
+                        <input name="first number" id="first number" placeholder="Enter number">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>secondNumber</td>
+                    <td>
+                        <input name="second number" id="second number" placeholder="Enter second number">
+                    </td>
+                     </tr>
+
+                <tr>
+                    <td>Result</td>
+                    <td>
+                        <input name="result" id="result" placeholder="Result">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Result</td>
+                    <td id="resultTd"></td>
+                </tr>
+               
+             <tr>
+    
+                <td></td>
+                <td> 
+                    <input onclick="jsfunction()" type="button" name="submitButton" id="submitButton" value="submit">
+                </td>
+            </tr>
+            </table>
+
+    </body>
+    <script>
+        function jsfunction(){
+
+            var firstNumber=document.getElementById('firstNumber').Value;
+            var secondNumber=document.getElementById('secondNumber').Value;
+
+            var result=firstNumber*secondNumber;
+            document.getElementById('result').Value=result;
+            document.getElementById('resultTd').innerHTML=result;
+
+
+           //document.getElementById('submitButton').style.backgroundColor="blue";
+            //const dataArray["karim","rahim","jhon"];
+            //for(let index=0;index<dataArray.length;index++)
+            //{
+              //  document.write(dataArray[index]+'<br>');
+           // }
+
+        }
+    </script>
+    </html>
